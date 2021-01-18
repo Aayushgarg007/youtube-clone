@@ -1,13 +1,18 @@
 import React from 'react';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import RecommendedVideos from './RecommendedVideos';
 import './App.css';
 
 function App() {
   return (
     // BEM class naming convention
     <div className="App">
-      <h1>Hello Lets build a youtube clone</h1>
-
-      {{/* Header */}}
+      <Header />
+      <div className="app__page">
+        <Sidebar />
+        <RecommendedVideos />
+      </div>
     </div>
   );
 }
